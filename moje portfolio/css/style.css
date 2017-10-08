@@ -1,21 +1,21 @@
-* box-sizing{
-    border: border-box;
+* {
+    box-sizing: border-box;
 } 
 
-}
+
 body  {
     font-family: 'Lato', sans-serif;
     margin: 0;
     color:#291f1a;
 }
-.h2 span{
+h2 span{
     color: lightgreen;
 }
-.cleaner{
+.clear{
     clear: both;
 }
 
-.selection{
+section{
     padding: 30px 50px;
 }
 /*nav*/
@@ -47,7 +47,8 @@ body  {
 #main-header {
     height: 80vh;
     background: url(../img/header-background.jpg) no-repeat;
-     background-size: cover;
+    background-size: cover;
+    background-position: center;
     position: relative;
 }
 #main-header .header-inner{
@@ -58,8 +59,6 @@ body  {
     text-align: center;
     color: #ffffff;
     font-family: "roboto", sans-serif;
-    
-    
 }
 
 #main-header .header-inner h1{
@@ -90,12 +89,15 @@ body  {
     float: left;
     display: inline-block;
     margin: 0;
+    
 }
 #about figure img{
     width: 50%;
+    text-align: center;
 }
 
-#about > div p {
+#about > div p{
     text-align: left;
+   
 }
 
