@@ -1,0 +1,285 @@
+/*selektor uniwersalny- lapie wyszytekie elementy na stronie*/
+
+* {
+    margin;
+    0;
+    padding: 0;
+    font-size: 80px;
+
+}
+
+/*selektor elemnetu - lapie wszytskie podane jako selektor element na stronie*/
+
+p {
+    font-size: 30px;
+}
+
+/*selektor identyfikatora lapie element o okresalnym id w koddzie html*/
+
+#testowy {
+    background-color: aqua;
+}
+
+/*seektor klasy lapie elementy o okresloenje klasie z kodu html*/
+
+.testowy_inner {
+    color:green;
+    font-size: 36px;
+}
+
+/*selektor potomka-lapie wszytskie potomki określamy przez selektor PO sapcji, nizzaleznie od ich poziomou zagniezdzenia*/
+
+#selektor_potomka p {
+    font-size: 48px;
+    color: red;
+}
+
+/*selektor dziecka/bezposredniego potomka- lapie elementy na bezposrednim poziomie zagnieżdzenia (1 w dol)*/
+
+#selektor_dziecka > p {
+    font-size: 40px;
+    color: violet;
+}
+
+
+#selektor_braci  span + p{
+    color: black;
+    background-color: aqua;
+}
+
+div.kwiaty {
+    background-color: red;
+}
+
+.kwiaty {
+    background-color: blue;
+    margin: 15px;
+}
+
+
+#pseudoelementy h1::before {
+    content: ' Haslo';
+    color: red;
+}
+
+#pseudoelementy h1::after {
+     content: ' lorem';
+    color: green;
+}
+
+#pseudoelementy h1::first-letter {
+    color: yellow;
+}
+
+/*peseudolementy::first-line lapie cala pierwsza linie podanego selektora*/
+
+#pseudoelementy .kwiatki2::first-line {
+    color: chocolate;
+}
+
+#linki a: {
+    color: grey;
+    
+}
+
+/*pseudoklasa :visited, słuzy do stylowania nieodwidzonych linkow*/
+
+#linki a:visited {
+    color: pink;
+    
+}
+
+/*pseudoklasa:hover, po najechaniu myszka na lemnt*/
+
+#linki a:hover {
+    color: red;
+    
+}
+
+/*pseudoklasa :active, kiedy trzymamy LPM na elementy*/
+
+#linki a:active {
+    color: orange;
+    
+}
+
+/*pseudoklasa :focus, kiedy uzupelniamy inputy, textarea*/
+
+#inputy input {
+    width: 99%;
+    margin-bottom: 20px;
+}
+
+#inputy input:focus {
+    border: 3px solid red;
+}
+
+/*pseudoklasa :target, okresla co ma sie stac z elementem, do ktorego prowdzi kotwica (link z okreslonym id ementu)*/
+
+:target {
+    border: 1px solid black;
+}
+
+/*pseudoklasa :lang(naza_jezyka), okresla odwolanie do elementu z atrybutem lang o okreslonej nazwie jeszyka*/
+
+div {
+    background-color: grey;
+}
+
+div:lang(pl) {
+    background-color: yellow;
+}
+
+/*pseudoelementy :first-child, :last-child - wybierają pierszy i ostatni elemet z okreslonego selketora*/
+
+#lista-dzieci ul .list-item:first-child {
+    font-size: 20px;
+    color: green;
+}
+
+#lista-dzieci ul .list-item {
+    font-size: 30px;
+    color: red;
+}
+
+#lista-dzieci ul. list-item:last-child {
+    font-size: 30px;
+    color: blue;
+}
+
+/*pseudoklasa :only-child, lapie element, ktory jeste jedynym dzieckiem/potomkiem elementu nadrzednego*/
+
+#jedyne-dziecko span: only-child {
+    font-style: italic;
+    font-size: 30px;
+    color: green;
+}
+
+/*div:empty {*/
+/*
+    display: block;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
+*/
+
+/* pseudoklasy :nth-child() i:nth-last-child(), służą do określenia elementow dzieci, mozemy wskazac konktetne dziecko, parzyste/nieparzyste dzieci, lub utworzyc wzor, ktore dzieci i co ile dzieci mja byc wybierane*/
+
+#kontener .inner {
+    display: inline-block;
+    height: 300px;
+    background-color: red;
+    margin-bottom: 20px;
+    width: 33%;
+    float: left;
+    margin-right: 0.5%;
+}
+
+#kontener .inner:nth-child(3n+3),
+#kontener .inner:nth-child(6) {
+    margin-right: 0;
+}
+
+#kontener .inner:nth-child(even) {
+    background-color: yellow;
+}
+
+.clear {
+    clear: both;
+    display: block;
+    width: 100%;
+}
+
+/*selektor atrybutow*/
+
+/*selektor [attr]- okresla elmenty, ktore maja atrybut attr, niezalnenie do id wartosci*/
+
+input[type] {
+    background-color: green;
+}
+
+/*selektor[atter="vall"] - okresla elementy, ktore posiadaja atrybuty attr o okreslonej wartosci "val"*/
+
+input[type="tel"] {
+    background-color: red;
+}
+
+/*seelktor[atter~="val"]- okresla elemnt, ktory posiada atrybut, ktory w wartosci posiada dany ciag zankow (dokladnie)*/
+
+input[type ~ ="opis"] {
+    background-color: black;
+}
+
+/*selektor[atter*="val"] - okresla eleemnt, ktory w atrybucie posiada wystapienie ciagu znakow*/
+
+input[type*="piaty"] {
+    background-color: blue;
+}
+
+/*selektor[att^="val"]- okresla elementy,ktory trybut rozpoczyna sie podanym ciegiem znakow*/
+
+/*<input type="text piaty koniec">*/
+
+input[type^="poczatek"] {
+    background-color: violet;
+}
+
+/*    <input type="text piaty koniec">*/
+
+input[type$="koniec"] {
+    background-color: blue;
+}
+
+#floated img {
+    float: left;
+}
+
+#tranzycje .inner_1,
+#tranzycje .inner_2 {
+    height: 300px;
+    width: 300px;
+}
+
+#tranzycje .inner_1 {
+    background-color: green;
+/*    transition-property: width;*/
+/*    transition-duration: 2s;*/
+/*    transition-delay: 2s;*/
+    transform: all 0.4s;
+    
+}
+
+#tranzycje .inner_1:hover {
+    background-color: aqua;
+    width: 800px;
+}
+
+#tranzycje .inner_2 {
+    background-color: red;
+}
+/*wlasciwosci tła*/
+#tlo{
+    width: 50%;
+    height: 800px;
+/*    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(10,255,100,0.6)), url('https://royalcanin.pl/blog/wp-content/uploads/2016/12/231W-2-950x680.jpeg');*/
+/*
+    background-image:
+    url('https://royalcanin.pl/blog/wp-content/uploads/2016/12/231W-2-950x680.jpeg');
+*/
+/*    linear-gradient(patametr_1, parametr_2),url()*/
+    background-repeat: no-repeat;
+    background-position: center;
+/*    background-size: cover;*/
+    background: 
+        url('https://royalcanin.pl/blog/wp-content/uploads/2016/12/231W-2-950x680.jpeg') no-repeat;
+/*    background-size: cover;*/
+    overflow: auto;
+    border:1px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+    
+}
+#tlo p{
+    font-size: 60px;
+}
