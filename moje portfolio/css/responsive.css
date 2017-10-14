@@ -1,10 +1,8 @@
-@media all and (max-width : 1200px){
-    
-}
-    
-    
-@media all and (max-width : 992px){
-    #menu .toggle{
+@media all and (max-width: 1200px) {}
+
+
+@media all and (max-width: 992px) {
+    #menu .toggle {
         display: block;
         background-color: #fff;
         padding: 0 20px;
@@ -15,25 +13,33 @@
         border: none;
         text-align: right;
     }
-    
-    #menu ul{
+
+    #menu ul {
         display: none;
     }
-    #menu #drop:checked + ul{
+    #menu #drop:checked + ul {
         display: block;
     }
+    #menu > ul > li {
+        display: block;
+        width: 100%;
+        padding: 3px;
+        text-align: right;
+        padding-right: 40px;
+
+    }
 }
-    
-    
-    @media all and (max-width : 768px){
-        sestion{
-            padding: 0 40px 50px;
-        }
+
+
+@media all and (max-width: 768px) {
+    sestion {
+        padding: 0 40px 50px;
+    }
 }
-    
-    
-@media all and (max-width : 576px){
-     sestion{
-            padding: 0 10px 30px;
-        }
+
+
+@media all and (max-width: 576px) {
+    sestion {
+        padding: 0 10px 30px;
+    }
 }

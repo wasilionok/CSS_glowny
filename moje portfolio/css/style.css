@@ -43,8 +43,9 @@ section{
     display: none;
 }
 #menu ul{
-    margin: 0;
+    margin: 0px;
     list-style-type: none;
+    background-color: #fff;
     
 }
 #menu ul .menu-item {
