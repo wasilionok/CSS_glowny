@@ -39,6 +39,9 @@ section{
     z-index: 1;
 
 }
+#menu .toggle, [id='drop']{
+    display: none;
+}
 #menu ul{
     margin: 0;
     list-style-type: none;
