@@ -10,6 +10,17 @@ body  {
 }
 h2 span{
     color: lightgreen;
+
+}
+h2{
+   text-align: center;
+}
+section h2{
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 60px; 
+    margin-bottom: 35px;
+    
 }
 .clear{
     clear: both;
@@ -79,25 +90,29 @@ section{
 /*absolut*/
 
 #about{
-    text-align: center;
+/*    text-align: center;*/
     background-color: #F9FCFE;
+    overflow: hidden;
     
-}
-#about figure,
-#about .about_info{
-    width: 50%;
-    float: left;
-    display: inline-block;
-    margin: 0;
-    
-}
-#about figure img{
-    width: 50%;
-    text-align: center;
 }
 
-#about > div p{
-    text-align: left;
-   
+#about >figure{
+    width: 50%;
+    float: left;
+    margin: 0;
+    text-align: center;
+
+}
+
+#about >article{
+    width: 50%;
+    float:left;
+}
+#about >figure >img{
+    max-height: 350px;
+    border:14px #fff solid;
+    border-radius: 15px;
+    max-width: 100%;
+
 }
 
