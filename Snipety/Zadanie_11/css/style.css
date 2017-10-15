@@ -1,0 +1,22 @@
+h1{
+    font-size: 3em;
+    text-align: center;
+    font-family: lato;
+    font-size:40px;
+}
+.pulse{
+    color: red;
+     animation: pulse 2s infinite;
+}
+    
+
+
+
+@keyframes pulse{
+     50%{
+        transform: scale(1.5)
+    }
+    100%{
+        transform: scale(1)
+    }
+}
