@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+}
+
+.content-section{
+    background-color: beige;
+    overflow: hidden;
+    padding: 100px;
+    background-repeat: no-repeat;
+   
+}
+
+.parallax{
+    height: 300px;
+    background-attachment: fixed;
+    
+}
+
+#parallax-first{
+    background-image: url(../img/biegnij.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+   
+}
+
+#parallax-second{
+    background-image: url(../img/biegnij.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
