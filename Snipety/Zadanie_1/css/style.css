@@ -1,0 +1,14 @@
+#kwadrat{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: relative;
+}
+
+#maly-kwadrat{
+    width: 50%;
+    height: 50%;
+    background-color: aqua;
+    position: absolute;
+    margin: 25%;
+}
