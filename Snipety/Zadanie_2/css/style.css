@@ -1,0 +1,19 @@
+#kolo a {
+    width:100px;
+	height:100px;
+	border-radius: 50%;
+	text-align: center;
+    background-color:aqua;
+    display: inline-block;
+    border: 2px solid aqua;
+    line-height: 100px;
+    color: #fff;
+    font-size: 50px;
+}
+
+#kolo a:hover{
+     color: #fff;
+     background-color: #fff; 
+}
+
+

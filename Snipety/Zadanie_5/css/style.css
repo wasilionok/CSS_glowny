@@ -1,0 +1,7 @@
+ul {
+    list-style: none;
+}
+li.fa fa-star-o::before{
+    content: '\f0a4';
+    font-family: FontAwesome;
+}

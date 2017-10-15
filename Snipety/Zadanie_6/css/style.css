@@ -1,0 +1,19 @@
+input[type='text']::placeholder{
+    color: green;
+}
+input[type='text']::-ms-input-placeholder{
+    color: green;
+}
+input[type='text']::-moz-placeholder{
+    color: green;
+}
+
+
+
+input[type='email']::placeholder{
+    color: red;
+}
+
+input[type='email']::-ms-input-placeholder{
+    color: red;
+}
